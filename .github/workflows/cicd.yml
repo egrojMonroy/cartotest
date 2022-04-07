@@ -6,10 +6,10 @@ name: PHA
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
   pull_request:
     branches:
-      - 'master'
+      - 'main'
 
 env:
   PROJECT_ID: ${{ secrets.GCR_PROJECT }}
