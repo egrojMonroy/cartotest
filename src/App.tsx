@@ -9,7 +9,6 @@ function App() {
     marker: {x: 0, y: 0, width: 24, height: 24, mask: true}
     // ... you can set different mappings and use them by key at getIcon function
   };
-
   useEffect(() => {
     // getCartoToken();
     setDefaultCredentials({
