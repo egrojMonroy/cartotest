@@ -11,6 +11,10 @@ function App() {
   
   useEffect(() => {
     // getCartoToken();
+    const ICON_MAPPING = {
+      marker: {x: 0, y: 0, width: 24, height: 24, mask: true}
+      // ... you can set different mappings and use them by key at getIcon function
+    };
     setDefaultCredentials({
       apiBaseUrl: 'https://gcp-us-east1.api.carto.com',
       accessToken:
