@@ -3,10 +3,6 @@ import { useEffect } from 'react';
 import logo from './logo.svg';
 import { CartoLayer, MAP_TYPES, setDefaultCredentials } from '@deck.gl/carto';
 import './App.css';
-const ICON_MAPPING = {
-  marker: {x: 0, y: 0, width: 24, height: 24, mask: true}
-  // ... you can set different mappings and use them by key at getIcon function
-};
 function App() {
   
   useEffect(() => {
