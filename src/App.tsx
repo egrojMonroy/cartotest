@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import logo from './logo.svg';
 import { CartoLayer, MAP_TYPES, setDefaultCredentials } from '@deck.gl/carto';
 import './App.css';
-
 function App() {
+  
   useEffect(() => {
     // getCartoToken();
     const ICON_MAPPING = {
@@ -18,7 +18,7 @@ function App() {
         'eyJhbGciOiJIUzI1NiJ9.eyJhIjoiYWNfajl3eHQwbnoiLCJqdGkiOiI3ZjVkZTJhYiJ9.deIgT389U_YFodUSADFt5g6EccLWIJAbw1Ta0CraYxQ'
     });
     // let icon = PinRed;
-    new CartoLayer({
+    const cartLayer = new CartoLayer({
       connection: 'carto_dw',
       type: MAP_TYPES.QUERY,
       data: 'select * from carto-dw-ac-j9wxt0nz.shared.pha_retailer_2',
@@ -30,6 +30,7 @@ function App() {
       iconMapping: ICON_MAPPING,
       iconAtlas: 'https://s3.amazonaws.com/com.cartodb.users-assets.production/maki-icons/marker-stroked-24.svg?req=markup'
     });
+    console.log(cartLayer);
   }, []);
   return (
     <div className="App">
