@@ -35,7 +35,7 @@ function App() {
       iconAtlas: 'https://s3.amazonaws.com/com.cartodb.users-assets.production/maki-icons/marker-stroked-24.svg?req=markup'
     });
     console.log(cartLayer);
-  }, [ICON_MAPPING]);
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
